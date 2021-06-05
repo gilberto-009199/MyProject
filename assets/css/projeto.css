@@ -1,0 +1,241 @@
+.painel_projeto{
+    
+}
+.painel_projeto_menu {
+    min-height: 40px;
+    text-indent: 12px;
+    border-bottom: 1px solid #dbdbdb;
+    border-radius: 7px 0px 0px 4px;
+    color: #303030;
+    font-size: 0.9em;
+    text-align: left;
+    vertical-align: middle;
+    align-items: center;
+    padding: 10px 12px;
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
+    background: linear-gradient(180deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 50%, rgba(238,238,238,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeeeee",endColorstr="#eeeeee",GradientType=1);
+}
+.painel_projeto_tarefas{
+    padding: 13px 8px 0px 30px;
+}
+
+.painel_projeto_tarefas .tarefa, .tarefa_header{
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(254,254,254,1) 36%, rgba(253,253,253,1) 72%, rgba(252,252,252,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(254,254,254,1) 36%, rgba(253,253,253,1) 72%, rgba(252,252,252,1) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(254,254,254,1) 36%, rgba(253,253,253,1) 72%, rgba(252,252,252,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#fcfcfc",GradientType=1);
+    height: auto;
+    overflow: auto;
+    border: solid 1px #eee;
+}
+.painel_projeto_tarefas .tarefa{
+    display:flex;
+}
+.painel_projeto_tarefas .tarefa:before{
+  position: relative;
+  /* content: unset; */
+  margin-top: 11px;
+  margin-right: -20px;
+  color:transparent;
+  cursor: pointer;
+}
+.painel_projeto_tarefas .tarefa {
+  /* padding-left: 15px; */
+}
+.painel_projeto_tarefas .tarefa:nth-child(even) {
+  background-color: #fff;
+}
+.painel_projeto_tarefas .tarefa:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.painel_projeto_tarefas .tarefa:hover{
+    background-image: -moz-linear-gradient(top, rgb(239,239,239), rgb(232,232,232));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(239,239,239)), to(rgb(232,232,232)));
+    background-image: -webkit-linear-gradient(top, rgb(239,239,239), rgb(232,232,232));
+    background-image: -o-linear-gradient(top, rgb(239,239,239), rgb(232,232,232));
+    background-image: linear-gradient(to bottom, rgb(239,239,239), rgb(232,232,232));
+    color: #1f1e1e;
+    border-color: #cecdcd;
+    cursor: pointer;
+}
+.painel_projeto_tarefas .tarefa:hover:before{
+  color: #1b9683;
+}
+.tarefa_dragdrop{
+    width: 100%;
+    height: 7px;
+    display: none;
+    text-indent: 45px;
+    background: #1b9683;
+    
+    border: solid 1px #cecdcd;
+    border-width: 1px 1px 0px 1px;
+
+    background-image: -moz-linear-gradient(top, rgb(239,239,239), rgb(232,232,232));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgb(239,239,239)), to(rgb(232,232,232)));
+    background-image: -webkit-linear-gradient(top, rgb(239,239,239), rgb(232,232,232));
+    background-image: -o-linear-gradient(top, rgb(239,239,239), rgb(232,232,232));
+    background-image: linear-gradient(to bottom, rgb(239,239,239), rgb(232,232,232));
+}
+
+.tarefa_data_inicio,
+.tarefa_data_fim,
+.tarefa_dependencias{
+    text-indent: 4px;
+}
+.tarefa_header{
+    
+}
+.tarefa_header .tarefa_data_inicio,
+.tarefa_header .tarefa_data_fim,
+.tarefa_header .tarefa_dependencias,
+.tarefa_header .tarefa_titulo,
+.tarefa_header .tarefa_pronta{
+    cursor: pointer;
+    /* border-right: solid 1px #ddd; */
+    color: #1f1e1e;
+    text-align: left;
+    /* padding-left: 13px; */
+    height: 42px;
+    /* min-width: 92px; */
+}
+
+.tarefa_header .tarefa_pronta{
+  border:none;  
+}
+.tarefa_header .tarefa_dependencias{
+  display:none;
+}
+
+
+.tarefa_data_inicio,
+.tarefa_data_fim,
+.tarefa_dependencias,
+.tarefa_titulo,
+.tarefa_pronta{
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    float: left;
+    padding: 11px 0px 6px;
+    border: 1px solid transparent;
+    /* border-right: solid 1px #ddd; */
+}
+.tarefa .tarefa_data_inicio,
+.tarefa .tarefa_data_fim,
+.tarefa .tarefa_dependencias,
+.tarefa .tarefa_titulo{
+  float: left;
+  text-transform: capitalize;
+  /* max-height: 42px; */
+}
+.tarefa .tarefa_data_inicio:hover,
+.tarefa .tarefa_data_fim:hover,
+.tarefa .tarefa_dependencias:hover,
+.tarefa .tarefa_titulo:hover{
+    border: 1px solid rgb(200, 198, 196);
+    border-radius: 4px;
+}
+.tarefa_titulo{
+    width: 50%;
+}
+.tarefa_data_inicio,
+.tarefa_data_fim{
+    width: 10%;
+    text-align: center;
+    min-width: 84px;
+}
+.tarefa_data_fim{
+
+}
+.tarefa_dependencias{
+    min-width: 100px;
+    width: 30%;
+}
+.tarafa_dependencias_item{
+    color: white;
+    border: solid 1px #ccc;
+    background-color: #0146d1;
+    display: inline-block;
+    text-indent: 0px;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+.tarafa_dependencias_item:hover{
+  font-weight:bold;
+}
+.tarafa_dependencias_item:nth-child(even) {
+  background-color: #33c422;
+  border-color:#3d3;
+}
+.tarafa_dependencias_item:nth-child(odd) {
+  background-color: #f21111;
+  border-color:#f64c4c;
+}
+.painel_projeto_tarefas ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+    text-indent: 4px;
+    transition: height 1.7s;
+}
+
+
+.tarefa_header .tarefa_pronta,
+.painel_projeto_tarefas ul li .tarefa .tarefa_pronta{
+  display: inline-block;
+  min-width: 49px;
+}
+.painel_projeto_tarefas ul li .tarefa .tarefa_titulo:before{
+  color: #3d3;
+  position: absolute;
+  content: unset;
+  margin-left: -25px;
+  font-size: 17px;
+}
+.painel_projeto_tarefas ul li.esconder .tarefa .tarefa_titulo:before{
+  content: "E";
+  color: black;
+  font-family: 'ElegantIcons';
+}
+.painel_projeto_tarefas ul li.esconder ul li .tarefa .tarefa_titulo:before{
+  content:unset;
+}
+.painel_projeto_tarefas ul li .tarefa:hover> .tarefa_titulo:before{
+  /*color:transparent;*/
+  content: "E";
+  color: black;
+  font-family: 'ElegantIcons';
+}
+
+.painel_projeto_tarefas ul li .tarefa .tarefa_titulo{
+    padding-left: 28px;
+}
+.painel_projeto_tarefas ul li ul li .tarefa .tarefa_titulo{
+    padding-left: 40px;
+}
+.painel_projeto_tarefas ul li ul li ul li .tarefa .tarefa_titulo{
+    padding-left: 54px;
+}
+.painel_projeto_tarefas ul li ul li ul li ul li .tarefa .tarefa_titulo{
+    padding-left: 70px;
+}
+.painel_projeto_tarefas ul li ul li ul li ul li ul li .tarefa .tarefa_titulo{
+    padding-left: 86px;
+}
+.painel_projeto_tarefas ul li ul li ul li ul li ul li ul li .tarefa .tarefa_titulo{
+    padding-left: 102px;
+}
+.painel_projeto_tarefas  ul li ul li ul li ul li ul li ul li ul li .tarefa .tarefa_titulo{
+    padding-left: 118px;
+}
+.painel_projeto_tarefas  ul li ul li ul li ul li ul li ul li ul li  ul li .tarefa .tarefa_titulo{
+    padding-left: 134px;
+}
+.painel_projeto_tarefas  ul li ul li ul li ul li ul li ul li ul li  ul li  ul li .tarefa .tarefa_titulo{
+    padding-left: 144px;
+}

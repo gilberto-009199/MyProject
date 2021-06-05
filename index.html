@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title> Nome do projeto</title>
+        <link href="assets/css/estrutura.css" rel="stylesheet"/>
+        <link href="assets/css/projeto.css" rel="stylesheet"/>
+        <link href="assets/font/elegant/style.css" rel="stylesheet"/>
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+    </head>
+    <body>
+        <!-- Menu  Principal-->
+        <div id="menu_site" role="navigation" aria-label="navigation main site">
+            <!-- Menu horizontal do site   -->
+        </div>
+        <!-- Menu vertical do usuario  -->
+        <div id="menu_usuario" role="navigation" aria-label="navigation user space">
+            
+        </div>
+        <div id="main" class="main painel_projeto" role="main">
+            <!-- Menu  do Projeto -->
+            <div class="painel_projeto_menu" role="navigation" aria-label="navigation project">
+               Bradesco Seguros > Previdencia BVP > Internet Banking
+            </div>
+            <!-- Tarefas do projeto  -->
+            <div class="painel_projeto_tarefas">
+                 <button onclick="criar()">
+                        <div class="fs1" aria-hidden="true" data-icon="i"></div>
+                        Criar tarefa
+                 </button>
+                <ul id="tabela">
+                    <li> 
+                        <div class="tarefa_header">
+                            <div class="tarefa_pronta"></div>
+                            <div class="tarefa_titulo">Nome</div>
+                            <div class="tarefa_data_inicio">D. inicio</div>
+                            <div class="tarefa_data_fim">D. fim</div>
+                            <div class="tarefa_dependencias"></div>
+                        </div>
+                    </li> 
+                    <li data-uuid="1" draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover="onDragOver(event,this);" ondrop=" onDrop(event,this);"> 
+                        <div class="tarefa" >
+                            <div class="tarefa_pronta"></div>
+                            <div class="tarefa_titulo">My Project</div>
+                            <div class="tarefa_data_inicio">02/06/1999</div>
+                            <div class="tarefa_data_fim">14/04/2021</div>
+                            <div class="tarefa_dependencias">
+                                <div class="tarafa_dependencias_item"> Mobile Core</div>
+                                <div class="tarafa_dependencias_item"> Scaleno</div>
+                            </div>
+                        </div>
+                        <div class="tarefa_dragdrop"></div>
+                        <ul>
+                            <li data-uuid="2" draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover=" onDragOver(event,this);" ondrop=" onDrop(event,this);"> 
+                                <div class="tarefa">
+                                    <div class="tarefa_pronta"></div>
+                                    <div class="tarefa_titulo">Planejamento</div>
+                                    <div class="tarefa_data_inicio">02/06/1999</div>
+                                    <div class="tarefa_data_fim">14/04/2021</div>
+                                    <div class="tarefa_dependencias">Dependencias</div>
+                                </div>
+                                <div class="tarefa_dragdrop"></div>
+                                <ul>
+                                    <li data-uuid="3" draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover="onDragOver(event,this);" ondrop=" onDrop(event,this);"> 
+                                        <div class="tarefa">
+                                            <div class="tarefa_pronta"></div>
+                                            <div class="tarefa_titulo">Reunião</div>
+                                            <div class="tarefa_data_inicio">02/06/1999</div>
+                                            <div class="tarefa_data_fim">14/04/2021</div>
+                                            <div class="tarefa_dependencias">Dependencias</div>
+                                        </div>
+                                        <div class="tarefa_dragdrop"></div>
+                                        <ul>
+                                            <li data-uuid="4" draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover=" onDragOver(event,this);" ondrop=" onDrop(event,this);">
+                                                <div class="tarefa">
+                                                    <div class="tarefa_pronta"></div>
+                                                    <div class="tarefa_titulo" >reunião ABCD</div>
+                                                    <div class="tarefa_data_inicio">02/06/1999</div>
+                                                    <div class="tarefa_data_fim">14/04/2021</div>
+                                                    <div class="tarefa_dependencias">Dependencias</div>
+                                                </div>
+                                                <div class="tarefa_dragdrop"></div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li data-uuid="5" draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover="onDragOver(event,this);" ondrop=" onDrop(event,this);"> 
+                                        <div class="tarefa">
+                                            <div class="tarefa_pronta"></div>
+                                            <div class="tarefa_titulo">Modelagem</div>
+                                            <div class="tarefa_data_inicio">02/06/1999</div>
+                                            <div class="tarefa_data_fim">14/04/2021</div>
+                                            <div class="tarefa_dependencias">Dependencias</div>
+                                        </div>
+                                        <div class="tarefa_dragdrop"></div>
+                                        <ul>
+                                            <li data-uuid="6" draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover=" onDragOver(event,this);" ondrop=" onDrop(event,this);">
+                                                <div class="tarefa">
+                                                    <div class="tarefa_pronta"></div>
+                                                    <div class="tarefa_titulo">Bando de dados</div>
+                                                    <div class="tarefa_data_inicio">02/06/1999</div>
+                                                    <div class="tarefa_data_fim">14/04/2021</div>
+                                                    <div class="tarefa_dependencias">Dependencias</div>
+                                                </div>
+                                                <div class="tarefa_dragdrop"></div>
+                                            </li>
+                                            <li data-uuid="7"  draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover=" onDragOver(event,this);" ondrop=" onDrop(event,this);">
+                                                <div class="tarefa">
+                                                    <div class="tarefa_pronta"></div>
+                                                    <div class="tarefa_titulo">Classes</div>
+                                                    <div class="tarefa_data_inicio">02/06/1999</div>
+                                                    <div class="tarefa_data_fim">14/04/2021</div>
+                                                    <div class="tarefa_dependencias">Dependencias</div>
+                                                </div>
+                                                <div class="tarefa_dragdrop"></div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-uuid="8" draggable="true" ondragleave="onDragLeave(event,this)" ondragover=" onDragOver(event,this);" ondrop=" onDrop(event,this);">
+                                <div class="tarefa">
+                                    <div class="tarefa_pronta"></div>
+                                    <div class="tarefa_titulo">Excecução</div>
+                                    <div class="tarefa_data_inicio">02/06/1999</div>
+                                    <div class="tarefa_data_fim">14/04/2021</div>
+                                    <div class="tarefa_dependencias">Dependencias</div>
+                                </div>
+                                <div class="tarefa_dragdrop"></div>
+                            </li>
+                            <li data-uuid="9" draggable="true" ondragleave="onDragLeave(event,this)" ondragenter="onDragEnter(event,this)" ondragover="onDragOver(event,this);" ondrop=" onDrop(event,this);">
+                                <div class="tarefa">
+                                    <div class="tarefa_pronta"></div>
+                                    <div class="tarefa_titulo">Implantação</div>
+                                    <div class="tarefa_data_inicio">02/06/1999</div>
+                                    <div class="tarefa_data_fim">14/04/2021</div>
+                                    <div class="tarefa_dependencias">Dependencias</div>
+                                </div>
+                                <div class="tarefa_dragdrop"></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div role="contentinfo" aria-label="footer main">
+            
+
+        </div>
+        <script type="text/javascript" src="assets/js/estrutura.js"></script>
+        <script type="text/javascript" src="assets/js/tabela.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
